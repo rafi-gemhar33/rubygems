@@ -13,6 +13,8 @@ gem 'jbuilder', '~> 2.7'
 
 gem "haml-rails", "~> 2.0"
 gem "simple_form"
+gem "faker"
+gem "devise"
 
 gem 'bootsnap', '>= 1.4.2', require: false
 

@@ -11,7 +11,7 @@ require("channels")
 import 'bootstrap'
 import '../stylesheets/application.scss'
 
-require("@fortawesome/fontawesome-free");
+require("@fortawesome/fontawesome-free")
 
 document.addEventListener("turbolinks:load", function() {
   $(function () {
@@ -25,3 +25,6 @@ document.addEventListener("turbolinks:load", function() {
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+require("trix")
+require("@rails/actiontext")
