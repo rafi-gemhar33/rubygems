@@ -9,14 +9,21 @@
           = link_to root_path, class: 'nav-link' do
             .fa.fa-home
             Home
+
         %li.nav-item{class: "#{ 'active font-weight-bold' if current_page?(courses_path)}"}
           = link_to courses_path, class: 'nav-link' do
             .fa.fa-book
             Course
+
+        %li.nav-item{class: "#{ 'active font-weight-bold' if current_page?(new_course_path)}"}
+          = link_to new_course_path, class: 'nav-link' do
+            .fa.fa-plus
+            New Course
+
       .form.inline.mr-2.my-lg-0
         = form_tag(courses_path, method: :get) do
           .input-group
-            = text_field_tag :title, params[:title], autocomplete: "off", class: "input form-control sm-2", placeholder: "Search", :type => "search"
+            = text_field_tag :title, params[:title], autocomplete: "off", class: "input form-controlsm-2", placeholder: "Search", :type => "search"
             %span.input.group-append
               %button.btn.btn-primary.mr-2.my-sm-0{:type => "submit"}
                 %span.fa.fa-search{"aria-hidden" => "true"}
